@@ -1,0 +1,183 @@
+body{
+    background-image: url(../images/bg-intro-desktop.png);
+    background-color:   hsl(0, 100%, 74%);
+}
+p{
+    line-height: 1.5rem;
+}
+.flex-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height:100vh;
+   gap: 40px;
+}
+
+.card{
+
+    
+     width: 480px;
+     height:520px;
+}
+
+.card1{
+     text-align: left;
+     color: white;
+     font-family: 'Poppins', sans-serif;
+   
+}
+.card2{
+     
+}
+.try{
+  background-color:  hsl(248, 32%, 49%);
+  border: none;
+  width: 480px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.Learn{
+      margin-top: 130px;
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 2.8rem;
+}
+
+.form-container{
+    background-color: white;
+    width: 480px;
+    text-align: center;
+    border-radius: 10px;
+    min-height: 490px;
+}
+input{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    /* color: hsl(246, 25%, 77%); */
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid  hsl(246, 25%, 77%);
+    padding:0 20px;
+}
+::placeholder {
+  color:  hsl(0, 100%, 74%);
+  font-size: 14px;
+  font-weight: 600;
+  /* padding: 15px; */
+
+}
+input[type=text]:focus {
+   color: black;
+   font-size: 14px;
+   font-weight: 600;
+   border: 2px solid  blue;
+   
+}
+.submit-button{
+   color: white;
+   background-color:  hsl(154, 59%, 51%);
+   border-bottom: 5px solid  rgba(18, 127, 94, 0.2);
+   border: none;
+   font-size: 14px;
+   font-weight: 550;
+   font-family: 'Poppins', sans-serif;
+   width: 435px;
+
+}
+.submit-button:hover{
+  background-color: hsla(154, 59%, 51%, 0.8);
+  
+  
+}
+.first-input{
+  margin-top: 30px;
+}
+.below-form{
+   margin-top: -15px;
+    color: hsl(246, 25%, 77%);
+    font-size: 14px;
+}
+.terms{
+     color: hsl(0, 100%, 74%);
+     font-weight: 700;
+}
+
+.error-message{
+   /* margin: 0; */
+   padding: 0;
+   text-align: right;
+   margin-top: -10px;
+   margin-right: 15px;
+   color:  #ff7a7a;
+   font-size: 13px;
+   font-weight: 550;
+}
+ .invalid{
+  background: url(../images/icon-error.svg) no-repeat right;
+  background-position: 400px center;
+ 
+}
+
+
+
+.attribution{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+      body{
+
+        background-image: url(../images/bg-intro-mobile.png);
+      }
+      p{
+        line-height: 1.8rem;
+      }
+      .flex-container{
+         flex-direction: column;
+      }
+      .card{
+          width: 320px;
+      }
+      .card1{
+        text-align: center;
+      }
+      .try{
+         width: 320px;
+         height: 90px;
+      }
+      .Learn{
+        font-weight: 600;
+        font-size: 30px;
+        margin-top: 50px;
+      }
+      .form-container{
+        width: 320px;
+      }
+      input{
+        width: 250px;
+      }
+      .submit-button{
+        width: 300px;
+      }
+  .invalid{
+    background-position: 250px center;
+  }
+  .attribution{
+      display: none;
+  }
+}
